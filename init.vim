@@ -11,6 +11,8 @@ endif
 
 call plug#begin(system('echo -n "${XDG_CONFIG_HOME:-$HOME/.config}/nvim/plugged"'))
 Plug 'tpope/vim-surround'
+Plug 'morhetz/gruvbox'
+Plug 'tpope/vim-fugitive'
 Plug 'preservim/nerdtree'
 Plug 'junegunn/goyo.vim'
 Plug 'jreybert/vimagit'
@@ -39,6 +41,10 @@ set visualbell
 set nowrap
 
 set encoding=utf-8
+
+
+"Colorscheme
+autocmd vimenter * ++nested colorscheme gruvbox
 
 
 " Whitespace
